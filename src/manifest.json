@@ -16,6 +16,14 @@
       "matches": ["http://*/*", "https://*/*", "<all_urls>"],
       "js": ["contentScript.bundle.js"],
       "css": ["content.styles.css"]
+    },
+    {
+      "matches": ["https://www.amazon.de/gp/cart/view.html"],
+      "js": ["contentCart.bundle.js"]
+    },
+    {
+      "matches": ["https://www.amazon.de/gp/product/*"],
+      "js": ["contentProduct.bundle.js"]
     }
   ],
   "options_page": "options.html",
