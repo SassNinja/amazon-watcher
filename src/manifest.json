@@ -1,19 +1,16 @@
 {
+  "manifest_version": 2,
   "name": "Amazon Watcher",
-  "options_page": "options.html",
-  "background": {
-    "page": "background.html"
+  "version": "1.0.0",
+  "description": "Take your shopping experience on amazon to the next level with automatic price tracking and visualization.",
+  "icons": {
+    "128": "icon-128.png"
   },
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": "icon-34.png"
   },
-  "chrome_url_overrides": {
-    "newtab": "newtab.html"
-  },
-  "icons": {
-    "128": "icon-128.png"
-  },
+  "author": "Kai Falkowski",
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*", "<all_urls>"],
@@ -21,11 +18,10 @@
       "css": ["content.styles.css"]
     }
   ],
+  "options_page": "options.html",
   "web_accessible_resources": [
     "content.styles.css",
     "icon-128.png",
     "icon-34.png"
-  ],
-  "manifest_version": 2,
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  ]
 }

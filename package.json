@@ -1,7 +1,7 @@
 {
   "name": "amazon-watcher",
   "version": "1.0.0",
-  "description": "A chrome extension to track price changes on amazon website.",
+  "description": "Chrome extension which enhances the shopping experience on the amazon website.",
   "license": "GNU GPLv3",
   "repository": {
     "type": "git",
@@ -9,8 +9,7 @@
   },
   "scripts": {
     "build": "node utils/build.js",
-    "start": "node utils/webserver.js",
-    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css,scss,html}'"
+    "start": "node utils/webserver.js"
   },
   "dependencies": {
     "@hot-loader/react-dom": "^16.13.0",
